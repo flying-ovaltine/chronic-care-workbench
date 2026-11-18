@@ -1,0 +1,13 @@
+# 慢病健康管理专家团（DeepSeek Harness 插件）
+#
+# 安装后同时得到：
+#   1. 左侧边栏主面板「慢病管理」：健康档案（A/B/C 可信度）/ 用药时间轴（医嘱 vs 自调）/
+#      自包含 SVG 趋势图 / 三段结论 / 四级就医建议 / 急诊红线中断 / 妊娠闸门
+#   2. 技能 chronic-care-team：面板「复制健康简报」后由它接管专业口径
+#
+# 自带空配置，绝不弄崩启动。
+#
+- insert:
+    - id: chronic-care-workbench
+      name: dsh-chronic-care-team
+      config: {}

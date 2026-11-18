@@ -1,0 +1,61 @@
+{
+  "name": "dsh-chronic-care-team",
+  "version": "1.0.0",
+  "private": false,
+  "description": "慢病健康管理专家团：面向患者本人的慢病照护面板（血压/血糖/尿酸/eGFR 档案带 A/B/C 可信度、用药时间轴、自包含趋势图、红线预警、妊娠闸门、四级就医建议），规则以技能形式随包分发。Patient-facing chronic care workbench: graded health profile, medication timeline, self-contained trend charts, red-flag alerts, pregnancy gate and four-level care-seeking advice.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "resources",
+    "locale",
+    "assets",
+    "icon.png",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "chronic-care",
+    "patient-facing",
+    "hypertension",
+    "diabetes",
+    "ckd",
+    "慢病管理",
+    "健康档案"
+  ],
+  "author": "杨杨",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  }
+}

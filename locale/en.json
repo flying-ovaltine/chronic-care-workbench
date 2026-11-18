@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chronic Care Team",
+    "description": "A patient-facing chronic care panel: record blood pressure, glucose, weight, waist, uric acid and eGFR with an A/B/C reliability grade; a medication timeline separating doctor-ordered from self-adjusted doses; self-contained trend charts that draw medication events as vertical lines (self-adjusted in red dashes). Red-flag symptoms (stroke, cardiac, unconscious hypoglycemia and others) pin a red banner and collapse everything else; women pass a pregnancy gate first, treated as possibly pregnant when unclear. The physician-guidance sentence is always pinned, followed by three conclusions and four-level care-seeking advice."
+  }
+}
